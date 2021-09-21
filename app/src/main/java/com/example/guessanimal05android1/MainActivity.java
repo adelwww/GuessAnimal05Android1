@@ -3,6 +3,7 @@ package com.example.guessanimal05android1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button dog, cat, squirrel;
     boolean isDog, isCat, isSquirrel;
+    CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
