@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button dog, cat, squirrel;
@@ -30,8 +33,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (isDog) {
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.dog_btn));
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
@@ -40,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (isCat) {
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.cat_btn));
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
                 }
@@ -50,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (isSquirrel) {
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
+                    YoYo.with(Techniques.Tada)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.squirrel_btn));
                 } else {
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
                 }
