@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
                             .repeat(1)
                             .playOn(findViewById(R.id.dog_btn));
                 } else {
+                    YoYo.with(Techniques.Shake)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.dog_btn));
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
 
                 }
@@ -53,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                             .repeat(1)
                             .playOn(findViewById(R.id.cat_btn));
                 } else {
+                    YoYo.with(Techniques.Shake)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.cat_btn));
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -67,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                             .repeat(1)
                             .playOn(findViewById(R.id.squirrel_btn));
                 } else {
+                    YoYo.with(Techniques.Shake)
+                            .duration(700)
+                            .repeat(1)
+                            .playOn(findViewById(R.id.squirrel_btn));
                     Toast.makeText(MainActivity.this, "Не верно", Toast.LENGTH_SHORT).show();
                 }
             }
